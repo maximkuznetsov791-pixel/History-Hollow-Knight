@@ -1,0 +1,810 @@
+body{
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    background-color: black;
+    opacity: 80%;
+    display: flex;
+    justify-content: center
+}
+.shapka{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50px;
+    grid-template-areas:"a1 a2 a3";
+    position: fixed;
+}
+.history{
+    grid-area: a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pers{
+    grid-area: a2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galary{
+    grid-area: a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    width: 100%;
+}
+.sec1 {
+    width: 100%;
+    height: 1150px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 230px);
+    grid-template-areas:". . a4 a4 . ."
+                        ". . a5 a5 a6 a6"
+                        ". . a5 a5 a6 a6"
+                        ". . a5 a5 a6 a6"
+                        ". . . . . .";
+    background: url(./Foto/fon.jpg) 0% 0% / cover;
+}
+.box1 {
+    grid-area: a4;
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    margin: 0px;
+}
+.box2 {
+    color: white;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    grid-area: a5;
+}
+@keyframes anim{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.box3 {
+    grid-area: a6;
+    animation: anim 3s linear 0s normal infinite;
+    
+}
+.fon{
+    background-color: rgb(0, 0, 0);
+    opacity: 97%;
+}
+.sec2{
+    width: 100%;
+    height: 1210px;
+    background: url(https://static.wikia.nocookie.net/hollowknight/images/0/0f/Menu_Theme_Classic_Release.png/revision/latest/scale-to-width-down/1000?cb=20190520041348);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 150px 350px 350px 350px;
+    grid-template-areas:". . a7 a7 . ."
+                        "a8 a9 b1 b2 b3 b4"
+                        "b5 b6 b7 b8 b9 c1"
+                        "c2 c3 c4 c5 . ."
+}
+.box4{
+    grid-area: a7;
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    
+}
+@media(max-width: 1450px){.sec2{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 150px 350px 350px 350px 350px;
+    grid-template-areas:".  .  a7 .  ."
+                        "a8 a9 b1 b2 b3"
+                        "b4 b5 b6 b7 b8"
+                        "b9 c1 c2 c3 c4"
+                        "c5 .  .  .  ."
+}}
+@media(max-width: 1255px){.sec2{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 150px 350px 350px 350px 350px;
+    grid-template-areas:".  a7 a7 ."
+                        "a8 a9 b1 b2"
+                        "b3 b4 b5 b6"
+                        "b7 b8 b9 c1"
+                        "c2 c3 c4 c5"
+}}
+@media(max-width: 975px){.sec2{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 150px 350px 350px 350px 350px 350px 350px;
+    grid-template-areas:".  a7 ."
+                        "a8 a9 b1"
+                        "b2 b3 b4"
+                        "b5 b6 b7"
+                        "b8 b9 c1"
+                        "c2 c3 c4"
+                        "c5 .  ."
+}}
+@media(max-width: 780px){.sec2{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 150px 350px 350px 350px 350px 350px 350px 350px 350px;
+    grid-template-areas:"a7 a7"
+                        "a8 a9"
+                        "b1 b2"
+                        "b3 b4"
+                        "b5 b6"
+                        "b7 b8"
+                        "b9 c1"
+                        "c2 c3"
+                        "c4 c5"
+}}
+@media(max-width: 590px){.sec2{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 150px 350px 350px 350px 350px 350px 350px 350px 350px 350px 350px 350px 350px 350px 350px 350px 350px;
+    grid-template-areas:"a7"
+                        "a8"
+                        "a9"
+                        "b1"
+                        "b2"
+                        "b3"
+                        "b4"
+                        "b5"
+                        "b6"
+                        "b7"
+                        "b8"
+                        "b9"
+                        "c1"
+                        "c2"
+                        "c3"
+                        "c4"
+                        "c5"
+}}
+.otof{
+    width: 100%;
+    height: 100%;
+}
+.ThePaleKing{
+    grid-area: a8;
+    margin: 5px;
+}
+.OPK{
+    color: white;
+    width: 100%;
+    height: 20%;
+}
+.OPKTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OPKBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FPK{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.Kingsmould{
+    grid-area: a9;
+    margin: 5px;
+}
+.OK{
+    color: white;
+    width: 100%;
+    height: 20%;
+}
+.OKTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OKBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FK{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.Elderbug{
+    grid-area: b1;
+    margin: 5px;
+}
+.OE{
+    color: white;
+    width: 100%;
+    height: 20%;
+}
+.OETOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OEBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.ZotetheMighty{
+    grid-area: b2;
+    margin: 5px;
+}
+.OZ{
+    color: white;
+    width: 100%;
+    height: 20%;
+}
+.OZTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.OZBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+}
+.FZ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.Bretta{
+    grid-area: b3;
+    margin: 5px;
+}
+.OB{
+    color: white;
+    width: 100%;
+    height: 20%;
+}
+.OBTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OBBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.Iselda{
+    grid-area: b4;
+    margin: 5px;
+}
+.OI{
+    color: white;
+    width: 100%;
+    height: 20%;
+}
+.OITOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OIBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.Cornifer{
+    grid-area: b5;
+    margin: 5px;
+}
+.OC{
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding-top: 15px;
+}
+.OCTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OCBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.Nailsmith{
+    grid-area: b6;
+    margin: 5px;
+}
+.ON{
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding-top: 15px;
+}
+.ONTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.ONBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.MantisLords{
+    grid-area: b7;
+    margin: 5px;
+}
+.OML{
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding-top: 15px;
+}
+.OMLTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OMLBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FML{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.TheRadiance{
+    grid-area: b8;
+    margin: 5px;
+}
+.OR{
+    color: white;
+    width: 100%;
+    height: 25%;
+    padding-top: 15px;
+}
+.ORTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.ORBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+}
+.TheKnight{
+    grid-area: b9;
+    margin: 5px;
+}
+.OTK{
+    color: white;
+    width: 100%;
+    height: 25%;
+    padding-top: 15px;
+}
+.OTKTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OTKBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FTK{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+}
+.Hornet{
+    grid-area: c1;
+    margin: 5px;
+}
+.OH{
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding-top: 15px;
+}
+.OHTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OHBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.TheLastStag{
+    grid-area: c2;
+    margin: 5px;
+}
+.OLS{
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding-top: 15px;
+}
+.OLSTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OLSBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FLS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.SnailShaman{
+    grid-area: c3;
+    margin: 5px;
+}
+.OSS{
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding-top: 15px;
+}
+.OSSTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OSSBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FSS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.TheHollowKnight{
+    grid-area: c4;
+    margin: 5px;
+}
+.OHK{
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding-top: 15px;
+}
+.OHKTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OHKBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FHK{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.TheHunter{
+    grid-area: c5;
+    margin: 5px;
+}
+.OTH{
+    color: white;
+    width: 100%;
+    height: 20%;
+    padding-top: 15px;
+}
+.OTHTOP{
+    width: 100%;
+    height: 25%;
+    font-size: 0.9vw;
+    display: flex;
+    justify-content: center;
+}
+.OTHBOT{
+    width: 100%;
+    height: 75%;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FTH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.sec3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(https://static.wikia.nocookie.net/hollowknight/images/0/0f/Menu_Theme_Classic_Release.png/revision/latest/scale-to-width-down/1000?cb=20190520041348);
+    background-size: cover;
+}
+.box5{
+    color: white;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.fon2{
+    width: 100%;
+    height: auto;
+}
+/* .loc{
+    width: 630px;
+    height: 574px;
+    display: grid;
+    grid-template-columns: 120px 30px 15px 25px 13px 20px 8px 16px 30px 18px 30px 27px 25px 35px 35px 33px 8px 30px 112px;
+    grid-template-rows: 150px 58px 23px 20px 30px 24px 45px 30px 27px 18px 8px 15px 15px 7px 28px 22px 53px;
+    grid-template-areas:"n  n  n  n  n  n  n  n  n  m  m  n  n  n  n  n  n  n  n"
+                        "hc hc hc hc hc hc d  d  d  d  d  n  n  cp cp cp n  n  n"
+                        "hc hc hc hc d  d  d  d  d  d  d  cp cp cp cp cp n  n  n"
+                        "g  g  hc hc d  d  d  d  d  d  d  n  n  cp cp cp n  n  n"
+                        "g  g  g  g  g  g  fc fc fc fc fc fc fc cp cp cp rg rg rg"
+                        "g  g  g  g  g  g  fc fc fc fc fc fc fc rg rg rg rg rg rg"
+                        "qg fg fg fg fg fg fg fg fw fw ct ct ct ct ct ct n  ke ke"
+                        "qg qg qg fg fg fw fw fw fw fw ct ct ct ct ct ct n  ke ke"
+                        "qg qg qg fw fw fw fw fw fw fw ct ct ct ct ct ct ct ct ke"
+                        "d1 d1 d1 d1 d1 d1 n  fw fw fw ct ct ct ct ct tc ct ct ke"
+                        "d1 d1 d1 d1 d1 d1 n  fw fw fw rw rw rw rw rw rw rw rw ke"
+                        "d1 d1 d1 d1 d1 d1 d1 fw fw rw rw rw rw rw rw rw rw rw ke"
+                        "d1 d1 d1 d1 d1 d1 d1 fw fw rw rw rw rw rw rw rw rw ke ke"
+                        "d1 d1 d1 d1 d1 n  n  n  n  rw rw rw rw rw rw rw rw ke th"
+                        "d1 d1 d1 d1 d1 n  n  n  n  n  n  n  rw rw rw rw rw ke th"
+                        "d1 d1 d1 d1 d1 d1 d1 d1 ll ll ll ll ab ab lr ke ke ke th"
+                        "n  n  n  n  n  n  n  ab ab ab ab ab ab ab ab ab n  n  th";
+}
+.HowlingCliffs{
+    grid-area: hc;
+}
+.DirtmouthP{
+    grid-area: d;
+}
+.CrystalPeak{
+    grid-area: cp;
+}
+.Greenpath{
+    grid-area: g;
+}
+.ForgottenCrossroads{
+    grid-area: fc;
+}
+.RestingGrounds{
+    grid-area: rg;
+}
+.QueensGardens{
+    grid-area: qg;
+}
+.FogCanyon{
+    grid-area: fg;
+}
+.FungalWastes{
+    grid-area: fw;
+}
+.CityofTears{
+    grid-area: ct;
+}
+.KingdomsEdge{
+    grid-area: ke;
+}
+.Deepnest{
+    grid-area: d1;
+}
+.RoyalWaterways{
+    grid-area: rw;
+}
+.TheHive{
+    grid-area: th;
+}
+.AncientBasin{
+    grid-area: ab;
+}
+.linearright{
+    grid-area: lr;
+}
+.linearleft{
+    grid-area: ll;
+}
+.null{
+    grid-area: n;
+}
+.map{
+    grid-area: m;
+} */
