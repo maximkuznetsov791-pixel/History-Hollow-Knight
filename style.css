@@ -101,7 +101,7 @@ main{
 }
 .sec2{
     width: 100%;
-    background: url(https://static.wikia.nocookie.net/hollowknight/images/0/0f/Menu_Theme_Classic_Release.png/revision/latest/scale-to-width-down/1000?cb=20190520041348);
+    background: url(./Foto/Menu.webp);
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -124,7 +124,7 @@ main{
 }
 @media(max-width: 1450px){.sec2{
     width: 100%;
-    background: url(https://static.wikia.nocookie.net/hollowknight/images/0/0f/Menu_Theme_Classic_Release.png/revision/latest/scale-to-width-down/1000?cb=20190520041348);
+    background: url(./Foto/Menu.webp);
     background-size: cover;
     border: none;
     display: grid;
@@ -138,7 +138,7 @@ main{
 }}
 @media(max-width: 1255px){.sec2{
     width: 100%;
-    background: url(https://static.wikia.nocookie.net/hollowknight/images/0/0f/Menu_Theme_Classic_Release.png/revision/latest/scale-to-width-down/1000?cb=20190520041348);
+    background: url(./Foto/Menu.webp);
     background-size: cover;
     border: none;
     display: grid;
@@ -152,7 +152,7 @@ main{
 }}
 @media(max-width: 975px){.sec2{
     width: 100%;
-    background: url(https://static.wikia.nocookie.net/hollowknight/images/0/0f/Menu_Theme_Classic_Release.png/revision/latest/scale-to-width-down/1000?cb=20190520041348);
+    background: url(./Foto/Menu.webp);
     background-size: cover;
     border: none;
     display: grid;
@@ -168,7 +168,7 @@ main{
 }}
 @media(max-width: 780px){.sec2{
     width: 100%;
-    background: url(https://static.wikia.nocookie.net/hollowknight/images/0/0f/Menu_Theme_Classic_Release.png/revision/latest/scale-to-width-down/1000?cb=20190520041348);
+    background: url(./Foto/Menu.webp);
     background-size: cover;
     border: none;
     display: grid;
@@ -186,7 +186,7 @@ main{
 }}
 @media(max-width: 590px){.sec2{
     width: 100%;
-    background: url(https://static.wikia.nocookie.net/hollowknight/images/0/0f/Menu_Theme_Classic_Release.png/revision/latest/scale-to-width-down/1000?cb=20190520041348);
+    background: url(./Foto/Menu.webp);
     background-size: cover;
     border: none;
     display: grid;
@@ -741,84 +741,3 @@ main{
     width: 100%;
     height: auto;
 }
-/* .loc{
-    width: 630px;
-    height: 574px;
-    display: grid;
-    grid-template-columns: 120px 30px 15px 25px 13px 20px 8px 16px 30px 18px 30px 27px 25px 35px 35px 33px 8px 30px 112px;
-    grid-template-rows: 150px 58px 23px 20px 30px 24px 45px 30px 27px 18px 8px 15px 15px 7px 28px 22px 53px;
-    grid-template-areas:"n  n  n  n  n  n  n  n  n  m  m  n  n  n  n  n  n  n  n"
-                        "hc hc hc hc hc hc d  d  d  d  d  n  n  cp cp cp n  n  n"
-                        "hc hc hc hc d  d  d  d  d  d  d  cp cp cp cp cp n  n  n"
-                        "g  g  hc hc d  d  d  d  d  d  d  n  n  cp cp cp n  n  n"
-                        "g  g  g  g  g  g  fc fc fc fc fc fc fc cp cp cp rg rg rg"
-                        "g  g  g  g  g  g  fc fc fc fc fc fc fc rg rg rg rg rg rg"
-                        "qg fg fg fg fg fg fg fg fw fw ct ct ct ct ct ct n  ke ke"
-                        "qg qg qg fg fg fw fw fw fw fw ct ct ct ct ct ct n  ke ke"
-                        "qg qg qg fw fw fw fw fw fw fw ct ct ct ct ct ct ct ct ke"
-                        "d1 d1 d1 d1 d1 d1 n  fw fw fw ct ct ct ct ct tc ct ct ke"
-                        "d1 d1 d1 d1 d1 d1 n  fw fw fw rw rw rw rw rw rw rw rw ke"
-                        "d1 d1 d1 d1 d1 d1 d1 fw fw rw rw rw rw rw rw rw rw rw ke"
-                        "d1 d1 d1 d1 d1 d1 d1 fw fw rw rw rw rw rw rw rw rw ke ke"
-                        "d1 d1 d1 d1 d1 n  n  n  n  rw rw rw rw rw rw rw rw ke th"
-                        "d1 d1 d1 d1 d1 n  n  n  n  n  n  n  rw rw rw rw rw ke th"
-                        "d1 d1 d1 d1 d1 d1 d1 d1 ll ll ll ll ab ab lr ke ke ke th"
-                        "n  n  n  n  n  n  n  ab ab ab ab ab ab ab ab ab n  n  th";
-}
-.HowlingCliffs{
-    grid-area: hc;
-}
-.DirtmouthP{
-    grid-area: d;
-}
-.CrystalPeak{
-    grid-area: cp;
-}
-.Greenpath{
-    grid-area: g;
-}
-.ForgottenCrossroads{
-    grid-area: fc;
-}
-.RestingGrounds{
-    grid-area: rg;
-}
-.QueensGardens{
-    grid-area: qg;
-}
-.FogCanyon{
-    grid-area: fg;
-}
-.FungalWastes{
-    grid-area: fw;
-}
-.CityofTears{
-    grid-area: ct;
-}
-.KingdomsEdge{
-    grid-area: ke;
-}
-.Deepnest{
-    grid-area: d1;
-}
-.RoyalWaterways{
-    grid-area: rw;
-}
-.TheHive{
-    grid-area: th;
-}
-.AncientBasin{
-    grid-area: ab;
-}
-.linearright{
-    grid-area: lr;
-}
-.linearleft{
-    grid-area: ll;
-}
-.null{
-    grid-area: n;
-}
-.map{
-    grid-area: m;
-} */
